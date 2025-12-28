@@ -8,9 +8,9 @@ This project analyzes **global order fulfillment and inventory performance** usi
 ### Dataset
 The analysis uses three operational datasets imported directly into **Tableau**:
 
-- **Orders & Shipments:** order volume, shipment status, shipment delay (days), fulfillment outcome  
-- **Inventory:** product-level inventory availability  
-- **Fulfillment Centers:** fulfillment center identifiers and performance attributes  
+- **Orders & Shipments (30K+ records):** order status, shipment timing, fulfillment outcomes  
+- **Inventory (4.2K records):** product-level stock availability  
+- **Fulfillment (118 records):** fulfillment center performance metrics  
 
 Relationships between tables were defined in Tableau’s data model to enable accurate cross-dataset analysis.
 
