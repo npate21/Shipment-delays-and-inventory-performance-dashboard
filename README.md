@@ -54,13 +54,13 @@ This analysis identifies where and why shipment delays occur across regions, pro
 ---
 
 ### 5. What should someone do about it?
-- **Reallocate order volume** away from consistently underperforming fulfillment centers  
-- Use high-performing centers as benchmarks for process improvements  
-- Monitor **% delayed shipments and avg. delay days weekly** using the dashboard  
-- Implement capacity planning adjustments during forecasted high-volume periods  
+- **Reallocate order volume away from consistently underperforming regions and warehouses** (notably European markets and Puerto Rico) toward higher-performing fulfillment centers, especially during peak demand periods.
+- **Standardize best-practice processes from top-performing fulfillment centers** and replicate them across underperforming locations, focusing on shipment handling during high-volume orders.
+- **Prioritize inventory replenishment for high-demand categories** (e.g., Women’s Apparel) to prevent recurring stockouts that directly trigger fulfillment delays, rather than increasing total inventory across all categories.
+- **Monitor % delayed shipments and average delay days on a weekly cadence** using the dashboard to identify early warning signals before backlogs accumulate.
+- **Implement proactive capacity planning tied to order volume forecasts**, adjusting staffing, inventory positioning, and fulfillment routing ahead of anticipated demand spikes.
 
-**Result:** A data-driven, scalable approach to fulfillment optimization that measurably reduces delays and improves customer experience.
-
+**Expected outcome:** Reduced shipment delays, better inventory utilization, and sustained delivery performance at scale.
 
 
 
