@@ -43,10 +43,11 @@ This analysis identifies where and why shipment delays occur across regions, pro
 ---
 
 ### 4. What are the key findings?
-- Shipment delays were **concentrated in a small subset of fulfillment centers**, not evenly distributed  
-- Certain regions consistently showed **higher delay percentages**, indicating logistics or capacity constraints  
-- High-order-volume periods correlated with **spikes in average shipment delay**, suggesting scalability issues  
-- Some fulfillment centers maintained low delay rates even during peak demand, highlighting best-practice operations  
+- Shipment delays and stock shortages are concentrated in specific regions and categories rather than across the entire network. European fulfillment markets (France, Germany, Spain, Italy) and Puerto Rico account for a disproportionate share of delayed orders, while U.S. warehouses show high variability rather than consistent lateness.
+- Despite a healthy total inventory value (**$86.43K**), high-demand categories (notably **Women’s Apparel**) repeatedly experience stockouts, with inventory levels dropping as low as **-800 to -1,000 units**, directly contributing to delayed fulfillment.
+- As order quantity increases, both stock deficits and shipment delay percentages rise, revealing scalability limitations in replenishment and fulfillment processes during peak demand periods.
+- A subset of warehouses maintains low delay rates even during high-volume periods, indicating that effective operational practices can be replicated to improve underperforming regions.
+- Delay evolution trends show backlog accumulation rather than random fluctuations, confirming that proactive inventory alignment and fulfillment planning are critical to preventing downstream delivery failures.
 
 **Insight:** Shipment delays were largely predictable based on fulfillment center performance and order volume trends.
 
