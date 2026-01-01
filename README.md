@@ -2,6 +2,7 @@
 
 ### Project Overview
 This project analyzes global order fulfillment and inventory performance using Tableau to identify shipment delays, fulfillment bottlenecks, and operational inefficiencies across a fictional retail supply chain. The analysis provides actionable insights that would enable operations teams to improve delivery performance and reduce customer-impacting delays.
+
 ---
 
 ### Dataset
