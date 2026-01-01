@@ -1,16 +1,15 @@
 ## 📦 Retail Supply Chain & Inventory Performance Analysis (Tableau)
 
 ### Project Overview
-This project analyzes **global order fulfillment and inventory performance** using Tableau to identify shipment delays, fulfillment bottlenecks, and operational inefficiencies. The goal was to provide stakeholders with actionable insights to improve delivery performance and reduce customer-impacting delays.
-
+This project analyzes global order fulfillment and inventory performance using Tableau to identify shipment delays, fulfillment bottlenecks, and operational inefficiencies across a fictional retail supply chain. The analysis provides actionable insights that would enable operations teams to improve delivery performance and reduce customer-impacting delays.
 ---
 
 ### Dataset
 The analysis uses three operational datasets imported directly into **Tableau**:
 
-- **Orders & Shipments (30K+ records):** order status, shipment timing, fulfillment outcomes  
-- **Inventory (4.2K records):** product-level stock availability  
-- **Fulfillment (118 records):** fulfillment center performance metrics  
+- **Orders & Shipments (30K+ records):** order status, shipment timing, fulfillment outcomes, customer/warehouse geography
+- **Inventory (4.2K records):** product-level stock availability by month and warehouse
+- **Fulfillment (118 records):** product-warehouse fulfillment time benchmarks
 
 Relationships between tables were defined in Tableau’s data model to enable accurate cross-dataset analysis.
 
@@ -22,32 +21,34 @@ This analysis identifies where and why shipment delays occur across regions, pro
 ---
 
 ### 2. What’s the business impact?
-- Insights from this dashboard helped stakeholders **reduce shipment delays by 40%**
-- Improved visibility into delay drivers enabled faster operational decision-making  
-- Fewer delayed shipments directly improved customer satisfaction and reduced downstream churn risk  
-
+- Provides visibility into delay patterns across 30K+ orders and $86.43K inventory.
+- Enables data-driven decisions on warehouse reallocation and inventory replenishment priorities.
+- Supports operational planning by revealing correlation between order volume spikes and fulfillment constraints.
+  
 ---
 
 ### 3. What did you do?
-- Imported multiple datasets directly into **Tableau** and defined logical relationships  
+- Imported three datasets into **Tableau** and established relationships using Product Name as the linking field
 - Built **advanced calculated fields** to track key KPIs:
   - Total Orders  
   - % of Delayed Shipments  
-  - Average Shipment Delay (Days)  
+  - Average Shipment Delay (Days)
+  - Inventory Deficit/Surplus by Product Category
 - Created **parameterized filters** to dynamically analyze performance by:
-  - Region  
-  - Fulfillment Center  
-  - Order Status  
-- Designed an interactive dashboard to support operational and executive-level analysis  
+  - Warehouse Country 
+  - Product Category (Top N)
+  - Time Period
+- Designed two interactive dashboards:
+  - **Shipment Analysis Dashboard**: geographic delay patterns, delay evolution over time, order quantity correlation
+  - **Inventory Analysis Dashboard**: supply vs. demand visualization, stock level trends, fulfillment time metrics
 
 ---
 
 ### 4. What are the key findings?
-- Shipment delays and stock shortages are concentrated in specific regions and categories rather than across the entire network. European fulfillment markets (France, Germany, Spain, Italy) and Puerto Rico account for a disproportionate share of delayed orders, while U.S. warehouses show high variability rather than consistent lateness.
-- Despite a healthy total inventory value (**$86.43K**), high-demand categories (notably **Women’s Apparel**) repeatedly experience stockouts, with inventory levels dropping as low as **-800 to -1,000 units**, directly contributing to delayed fulfillment.
-- As order quantity increases, both stock deficits and shipment delay percentages rise, revealing scalability limitations in replenishment and fulfillment processes during peak demand periods.
-- A subset of warehouses maintains low delay rates even during high-volume periods, indicating that effective operational practices can be replicated to improve underperforming regions.
-- Delay evolution trends show backlog accumulation rather than random fluctuations, confirming that proactive inventory alignment and fulfillment planning are critical to preventing downstream delivery failures.
+-  61% of orders experienced delays with an average of 0.5 days late. However, this overall average conceals extreme regional variation—European markets (France, Germany, Spain, Italy)    and Puerto Rico show consistently higher delays while some U.S. warehouses ship early, offsetting the network average.
+-  **Inventory-fulfillment misalignment**: Despite healthy total inventory value ($86.43K) and average fulfillment time of 5.3 days, high-demand categories (notably Women's Apparel)       experience stockouts reaching -814 units, directly causing fulfillment delays.
+-  **Order volume correlation**: As order quantity increases, both inventory deficits and delay percentages rise, revealing scalability limitations in replenishment and fulfillment        processes during peak demand periods.
+-  **Performance variability**: Top-performing warehouses maintain low delay rates even during high-volume periods, indicating that effective operational practices exist and could be      replicated to improve underperforming regions.
 
 **Insight:** Shipment delays were largely predictable based on fulfillment center performance and order volume trends.
 
